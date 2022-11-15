@@ -12,8 +12,8 @@ def message():
 
     sender_number = "(509) 265-6982"
     user_number = "+4407568085248"
-    account_sid = os.environ.get('account_sid')
-    auth_token = os.environ.get('auth_key') 
+    account_sid = 'ACc62f075a13cd277f15cf38859e452faf'
+    auth_token = '298e406b5b619a8962d1b6c22101b1b5'
     client = Client(account_sid, auth_token)
 
     message = client.messages.create(
