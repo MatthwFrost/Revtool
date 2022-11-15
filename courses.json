@@ -1,0 +1,48 @@
+{
+    "iterate": 4,
+    "courses": [
+        {
+            "subject": "Maths",
+            "code": "EG-113",
+            "last_accessed": "2022-11-15",
+            "emoji": "➗"
+        },
+        {
+            "subject": "Mechanics",
+            "code": "EG-166",
+            "last_accessed": "2022-11-15",
+            "emoji": "🛠️"
+        },
+        {
+            "subject": "Materials",
+            "code": "EG-180",
+            "last_accessed": "2022-11-15",
+            "emoji": "💎"
+        },
+        {
+            "subject": "Design & lab",
+            "code": "EG-163",
+            "last_accessed": "2022-11-15",
+            "emoji": "🖌️"
+        },
+        {
+            "subject": "Introduction to Aerospace",
+            "code": "EG-194",
+            "last_accessed": "2022-11-14",
+            "emoji": "✈️"
+        },
+        {
+            "subject": "Problem solving for Aerospace Engineers",
+            "code": "EG-118",
+            "last_accessed": "2022-11-14",
+            "emoji": "🧐"
+        },
+        {
+            "subject": "Engineering Skills for Aerospace Engineers",
+            "code": "EG-119",
+            "last_accessed": "2022-11-14",
+            "emoji": "🤹"
+        }
+    ],
+    "current_week": "week_b"
+}
