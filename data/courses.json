@@ -1,5 +1,5 @@
 {
-    "iterate": 5,
+    "iterate": 1,
     "courses": [
         {
             "subject": "Maths",
@@ -44,6 +44,5 @@
             "emoji": "🤹"
         }
     ],
-    "current_week": "week_b",
-    "../data/current_week": "week_a"
+    "current_week": "week_b"
 }

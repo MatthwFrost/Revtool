@@ -39,7 +39,7 @@ class Revision:
     # Updates date to todays date when called
     def update_week(self):
         # Parses json file and assigns the todays date to it
-        self.data['../data/current_week'] = self.current_week
+        self.data['current_week'] = self.current_week
 
         with open('courses.json', 'w', encoding='utf-8') as f:
             json.dump(self.data, f, ensure_ascii=False, indent=4)
