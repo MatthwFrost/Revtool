@@ -1,1 +1,1 @@
-python3 ../src/main.py
+python3 ~/fun/revtool/src/main.py

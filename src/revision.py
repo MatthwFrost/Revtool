@@ -5,7 +5,8 @@ import json
 
 class Revision:
     def __init__(self):
-        self.f = open('../data/courses.json')
+        self.path = 'data/courses.json'
+        self.f = open(self.path)
         data = json.load(self.f)
         self.data = data 
         self.itr = data['iterate']
@@ -24,7 +25,7 @@ class Revision:
         else:
             self.data["iterate"] = self.data["iterate"] + 1
 
-        with open('../data/courses.json', 'w', encoding='utf-8') as f:
+        with open(self.path, 'w', encoding='utf-8') as f:
             json.dump(self.data, f, ensure_ascii=False, indent=4)
 
     # Updates date to todays date when calle
@@ -32,7 +33,7 @@ class Revision:
         # Parses json file and assigns the todays date to it
         self.data['courses'][self.itr]['last_accessed'] = str(self.TODAY_DATE)
 
-        with open('../data/courses.json', 'w', encoding='utf-8') as f:
+        with open(self.path, 'w', encoding='utf-8') as f:
             json.dump(self.data, f, ensure_ascii=False, indent=4)
 
 
