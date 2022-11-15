@@ -1,5 +1,5 @@
 {
-    "iterate": 4,
+    "iterate": 5,
     "courses": [
         {
             "subject": "Maths",
@@ -28,21 +28,22 @@
         {
             "subject": "Introduction to Aerospace",
             "code": "EG-194",
-            "last_accessed": "2022-11-14",
+            "last_accessed": "2022-11-15",
             "emoji": "✈️"
         },
         {
             "subject": "Problem solving for Aerospace Engineers",
             "code": "EG-118",
-            "last_accessed": "2022-11-14",
+            "last_accessed": "2022-11-15",
             "emoji": "🧐"
         },
         {
             "subject": "Engineering Skills for Aerospace Engineers",
             "code": "EG-119",
-            "last_accessed": "2022-11-14",
+            "last_accessed": "2022-11-15",
             "emoji": "🤹"
         }
     ],
-    "current_week": "week_b"
+    "current_week": "week_b",
+    "../data/current_week": "week_a"
 }

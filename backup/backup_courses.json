@@ -7,5 +7,6 @@
         {"subject": "Introduction to Aerospace", "code": "EG-194", "last_accessed": "12/11/2022"}, 
         {"subject": "Problem solving for Aerospace Engineers", "code": "EG-118", "last_accessed": "13/11/2022"}, 
         {"subject": "Engineering Skills for Aerospace Engineers", "code": "EG-119", "last_accessed": "14/11/2022"}
-    ]
+    ],
+    "week": "week_b"
 }
