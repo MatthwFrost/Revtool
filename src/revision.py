@@ -1,16 +1,15 @@
 #!/usr/bin/env python
-    
 from datetime import date, datetime, timedelta
 import json
 
 class Revision:
     def __init__(self):
-        self.path = 'data/courses.json'
+        self.path = '../data/courses.json'
         self.f = open(self.path)
         data = json.load(self.f)
-        self.data = data 
+        self.data = data
         self.itr = data['iterate']
-        self.current_week = data["current_week"] 
+        self.current_week = data["current_week"]
         self.TODAY_DATE = date.today()
         self.week_a = [0,3,2,5,4,6,1]
         self.week_b = [0,2,1,3,5,4,6]

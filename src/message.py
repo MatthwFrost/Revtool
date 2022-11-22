@@ -1,6 +1,14 @@
 from twilio.rest import Client
 from revision import Revision
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+TWILIO_AUTH_KEY = os.getenv('TWILIO_AUTH_KEY')
+TWILIO_ACCOUNT_SID = os.getenv('TWILIO_ACCOUNT_SID')
+TWILIO_USER_NUMBER = os.getenv('TWILIO_USER_NUMBER')
+TWILIO_SENDER_NUMBER = os.getenv('TWILIO_SENDER_NUMBER')
 
 def message():
 
@@ -10,15 +18,11 @@ def message():
     week = (app.get_week()).upper()
     string = f"Good Morning!\n🗓️week: {week}\n\nRevision: {revision}\nRevisit: {revisit}"
 
-    sender_number = "(509) 265-6982"
-    user_number = "+4407568085248"
-    account_sid = 'ACc62f075a13cd277f15cf38859e452faf'
-    auth_token = '298e406b5b619a8962d1b6c22101b1b5'
-    client = Client(account_sid, auth_token)
+    client = Client(TWILIO_ACCOUNT_SID, TWILIO_AUTH_KEY)
 
     message = client.messages.create(
-                                  from_=sender_number,
+                                  from_=TWILIO_SENDER_NUMBER,
                                   body=string,
-                                  to=user_number
+                                  to=TWILIO_USER_NUMBER
                               )
     del app
