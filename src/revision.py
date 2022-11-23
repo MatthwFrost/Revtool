@@ -3,6 +3,7 @@ from datetime import date, datetime, timedelta
 import json
 
 class Revision:
+    '''Gets and sorts all revision from a courses.json file'''
     def __init__(self):
         self.path = '../data/courses.json'
         self.f = open(self.path)
@@ -18,7 +19,6 @@ class Revision:
         self.f.close()
 
     def update_itr(self, num):
-
         if num == 0:
             self.data["iterate"] = 0
         else:
@@ -87,12 +87,12 @@ class Revision:
         self.update_date()
 
         string = f"{subject} {emoji}"
-        return string 
+        return string
 
     def get_revisit(self):
         # get date three days ago
         revisit_time = int((self.TODAY_DATE - timedelta(days=3)).strftime('%d'))
-        
+        # Checks if any dates in courses.json are from 3 days ago, if so make it the revisit subject.
         for i, d in enumerate(self.data['courses']):
             date = d['last_accessed'][:2]
             if revisit_time == int(date):

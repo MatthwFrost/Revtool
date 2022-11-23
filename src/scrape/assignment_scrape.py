@@ -11,30 +11,31 @@ cookies = {
     '_legacy_normandy_session': CANVAS_TOKEN
 }
 
-params = {
-    'exclude_assignment_submission_types[]': 'wiki_page',
-    'exclude_response_fields[]': [
-        'description',
-        'rubric',
-    ],
-    'include[]': [
-        'assignments',
-        'discussion_topic',
-    ],
-}
+#course_path = "courses/36829"
+course_path = []
+course_info = []
+data = []
 
-response = requests.get('https://canvas.swansea.ac.uk/api/v1/courses/36847/assignment_groups', params=params, cookies=cookies)
+# Take all the course paths and put them into a list
+with open('course_info.json', 'r') as f:
+    course_info = json.load(f)
+    f.close()
 
-data = response.json()
+for i in course_info:
+    course_path.append(i['course_path'])
 
-for i in data:
-    for j in i['assignments']:
-        print(j['name'])
-        print(j['due_at'])
-
-
+#print(course_path)
+#for i in course_path:
+#    response = requests.get(f'https://canvas.swansea.ac.uk/api/v1/{i}/assignment_groups', cookies=cookies)
+#    data.append({
+#        # Change to json(), the text isn't very good
+#        f'assignments-{i}': response.text
+#    })
 
 
+with open('course_assignments.json', 'w') as f:
+     json.dump(data, f, indent=4)
+     f.close()
 
 
-
+requests.Session()

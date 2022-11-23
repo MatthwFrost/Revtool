@@ -16,8 +16,7 @@ cookies = {
 }
 
 
-response = requests.get('https://canvas.swansea.ac.uk/api/v1/dashboard/dashboard_cards', cookies=cookies)
-data = response.json()
+data = requests.get('https://canvas.swansea.ac.uk/api/v1/dashboard/dashboard_cards', cookies=cookies).json()
 
 substring = "2223"
 course_details = []
