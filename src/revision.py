@@ -58,7 +58,6 @@ class Revision:
             # Put week_b values into week_index
             for i in range(0, len(self.week_b)):
                 week_index[i] = self.week_b[i]
-        
 
         # Check if iterate has reached 6 then reset and change week
         #print(itr)
@@ -73,7 +72,7 @@ class Revision:
 
             self.update_week()
 
-        else: 
+        else:
             self.update_itr(1)
 
         itr_num = week_index[self.data['iterate']]

@@ -1,0 +1,37 @@
+[
+    {
+        "course_name": "2223_EG-180_Introduction to Materials Engineering",
+        "course_code": "EG-180",
+        "course_path": "/courses/36833"
+    },
+    {
+        "course_name": "2223_EGA118_Problem solving for Aerospace Engineers",
+        "course_code": "EGA118",
+        "course_path": "/courses/36882"
+    },
+    {
+        "course_name": "2223_EG-113_Engineering Mathematics 1 (Aero & Civil)",
+        "course_code": "EG-113",
+        "course_path": "/courses/36852"
+    },
+    {
+        "course_name": "2223_EG-163_Design and Laboratory Classes 1",
+        "course_code": "EG-163",
+        "course_path": "/courses/36825"
+    },
+    {
+        "course_name": "2223_EG-166_Engineering Mechanics (Aero & Civil)",
+        "course_code": "EG-166",
+        "course_path": "/courses/36829"
+    },
+    {
+        "course_name": "2223_EG-194_Introduction to Aerospace Engineering",
+        "course_code": "EG-194",
+        "course_path": "/courses/36847"
+    },
+    {
+        "course_name": "2223_EGA119_Engineering Skills for Aerospace Engineers",
+        "course_code": "EGA119",
+        "course_path": "/courses/36887"
+    }
+]

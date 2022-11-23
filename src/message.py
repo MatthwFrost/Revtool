@@ -24,5 +24,6 @@ def message():
                                   from_=TWILIO_SENDER_NUMBER,
                                   body=string,
                                   to=TWILIO_USER_NUMBER
-                              )
+    )
+
     del app
